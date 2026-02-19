@@ -173,6 +173,14 @@ body {
   font-size: 1.15rem;
   color: #9f9f9f;
   cursor: pointer;
+  &:hover:not(.active) {
+    color: #7d7d7d;
+  }
+}
+
+.pet-filter .active {
+  color: #475aff;
+  text-decoration: underline;
 }
 
 .site-footer p {
