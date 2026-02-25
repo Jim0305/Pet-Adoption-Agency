@@ -24,7 +24,7 @@ getWeather();
 async function petsArea() {
   try {
     const petsPromise = await fetch(
-      'https://learnwebcode.github.io/bootcamp-pet-data/pets.json',
+      'https://netlify-pet-adopt.netlify.app/.netlify/functions/pets',
     );
     const petsData = await petsPromise.json();
     if (petsPromise.status === 200) {
